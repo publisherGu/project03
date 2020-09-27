@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> --> <!--CDN 링크 -->
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fullpage.css"> <!-- one page scroll css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- fade in css -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> <!-- jquery library -->
+    <script src="js/fullpage.js"></script> <!-- one page scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- fade in library -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <script src="js/parallax.js"></script> <!-- parrallax library -->
+  </head>
+  <body>
+
+    <header>
+      <!-- <form  class="search-box-hover">
+        <input type="search" placeholder="Search.." class="search-form">
+      </form> -->
+
+      <div class="header-wrap">
+        <h1>
+          <a href="index.html">
+            <img class="logo-white" src="logo-white.png">
+            <!-- <img class="logo-gray" src="logo-gray.png"> -->
+            <p>Incheon Airport</p>
+          </a>
+        </h1>
+
+        <div class="fullpageMenu" id="nav">
+          <div class="banner">
+            <img src="img/navigation-img4.jpg" alt="">
+          </div>
+
+          <div class="nav">
+            <ul>
+              <li><a href="collaboration.html" data-text="Facility">Facility</a></li>
+              <li><a href="#" data-text="Guide Map">Guide Map</a></li>
+              <li><a href="#" data-text="Login">Login</a></li>
+              <li><a href="#" data-text="Sign Up">Sign Up</a></li>
+              <li><a href="#" data-text="Departure Arrival">Departure Arrival</a></li>
+              <li><a href="#" data-text="Parking">Parking</a></li>
+              <li><a href="food.html" data-text="Restaurant">Restaurant</a></li>
+              <li><a href="#" data-text="Service">Service</a></li>
+            </ul>
+          </div>
+          <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+
+        </div>
+
+      </div>
+    </header>
+
+    <section id="full-page">
+      <div class="section s0">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="main1.jpg">
+        </div>
+
+        <p data-aos-easing="linear" data-aos-duration="1500" data-aos="fade-right">
+          Incheon Airport<br>
+          공항,그 한계를 뛰어넘다
+        </p>
+
+        <div class="flight-toggle" data-aos-easing="linear" data-aos-duration="1500" data-aos="fade-down">
+          <ul>
+            <li class="realtime_info">
+
+              <a href="#">
+                <i class="fas fa-plane"></i>
+                실시간 정보
+              </a>
+
+              <div class="flight-toggle-page1">
+                <ul>
+                  <li><a href="#">국제선</a></li>
+                  <li><a href="#">국내선</a></li>
+                </ul>
+
+                <div class="tab-container">
+                  <ul>
+                    <li><a href="#">출발</a>
+                      <div class="tab-container2">
+                        <table>
+                          <colgroup>
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                          </colgroup>
+
+                          <thead>
+                            <tr>
+                              <th scope="col">정시</th>
+                              <th scope="col">현재상황</th>
+                              <th scope="col">목적지</th>
+                              <th scope="col">항공사ㆍ편명</th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>17:40</td>
+                              <td>CANCELLED</td>
+                              <td>HONGKONG</td>
+                              <td>HK Airlines<br>HX619</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:10</td>
+                              <td>CANCELLED</td>
+                              <td>SEOUL</td>
+                              <td>Eastar Jet<br>ZE614</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>CHANGZHOU BENNIU</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+                          </tbody>
+
+                        </table>
+                      </div>
+                    </li>
+
+                    <li><a href="#">도착</a>
+                      <div class="tab-container2 ddd">
+                        <table>
+                          <colgroup>
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                          </colgroup>
+
+                          <thead>
+                            <tr>
+                              <th scope="col">정시</th>
+                              <th scope="col">현재상황</th>
+                              <th scope="col">출발지</th>
+                              <th scope="col">항공사ㆍ편명</th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>17:10</td>
+                              <td>CANCELLED</td>
+                              <td>SEOUL</td>
+                              <td>Eastar Jet<br>ZE613</td>
+                            </tr>
+
+                            <tr>
+                              <td>17:30</td>
+                              <td>CANCELLED</td>
+                              <td>DALIAN</td>
+                              <td>Nippon Airways<br>NH946</td>
+                            </tr>
+
+                            <tr>
+                              <td>17:40</td>
+                              <td>CANCELLED</td>
+                              <td>QINGDAO</td>
+                              <td>Nippon Airways<br>NH946</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+                          </tbody>
+
+                        </table>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tab-container">
+                  <ul>
+                    <li><a href="#">출발</a>
+                      <div class="tab-container3">
+                        <table>
+                          <colgroup>
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                          </colgroup>
+
+                          <thead>
+                            <tr>
+                              <th scope="col">정시</th>
+                              <th scope="col">현재상황</th>
+                              <th scope="col">목적지</th>
+                              <th scope="col">항공사ㆍ편명</th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>17:40</td>
+                              <td>CANCELLED</td>
+                              <td>HONGKONG</td>
+                              <td>HK Airlines<br>HX619</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:10</td>
+                              <td>CANCELLED</td>
+                              <td>SEOUL</td>
+                              <td>Eastar Jet<br>ZE614</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>CHANGZHOU BENNIU</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+
+                            <tr>
+                              <td>19:55</td>
+                              <td>CANCELLED</td>
+                              <td>WUHAN</td>
+                              <td>Spring Airlines<br>9C8740</td>
+                            </tr>
+                          </tbody>
+
+                        </table>
+                      </div>
+                    </li>
+
+                    <li><a href="#">도착</a>
+                      <div class="tab-container3 ddd">
+                        <table>
+                          <colgroup>
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                            <col width="22%">
+                          </colgroup>
+
+                          <thead>
+                            <tr>
+                              <th scope="col">정시</th>
+                              <th scope="col">현재상황</th>
+                              <th scope="col">출발지</th>
+                              <th scope="col">항공사ㆍ편명</th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>17:10</td>
+                              <td>CANCELLED</td>
+                              <td>SEOUL</td>
+                              <td>Eastar Jet<br>ZE613</td>
+                            </tr>
+
+                            <tr>
+                              <td>17:30</td>
+                              <td>CANCELLED</td>
+                              <td>DALIAN</td>
+                              <td>Nippon Airways<br>NH946</td>
+                            </tr>
+
+                            <tr>
+                              <td>17:40</td>
+                              <td>CANCELLED</td>
+                              <td>QINGDAO</td>
+                              <td>Nippon Airways<br>NH946</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+
+                            <tr>
+                              <td>18:00</td>
+                              <td>CANCELLED</td>
+                              <td>YANGZHOU</td>
+                              <td>Spring Airlines<br>9C8709</td>
+                            </tr>
+                          </tbody>
+
+                        </table>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="today_search">
+      				<a href="#">
+                <i class="fas fa-search"></i>
+                오늘의 운항 검색
+              </a>
+
+      				<div class="flight-toggle-page2">
+                <form class="" action="index.html" method="post">
+                  <label for="division" id="first">Division</label>
+                  <select class="division" name="division">
+                    <option value="">국제선/출발</option>
+                    <option value="">국제선/도착</option>
+                    <option value="">국내선/출발</option>
+                    <option value="">국내선/도착</option>
+                    <option value="">화물편/출발</option>
+                    <option value="">화물편/도착</option>
+                  </select>
+
+                  <label for="D.D">Destination/Departure</label>
+                  <select class="D.D" name="D.D">
+                    <option value="">All area</option>
+                    <option value="">Japan/China/Taiwan</option>
+                    <option value="">Southeast Asia/South Asia</option>
+                    <option value="">Oceania/Pacific</option>
+                    <option value="">Europe/Russia</option>
+                    <option value="">Africa/Near East</option>
+                  </select>
+
+                  <label for="Airline">Airline</label>
+                  <select class="Airline" name="Airline">
+                    <option value="">Asiana Airlines</option>
+                    <option value="">Korean Air</option>
+                    <option value="">Air Seoul</option>
+                    <option value="">Jin Air</option>
+                    <option value="">Jeju Air</option>
+                    <option value="">Tway Air</option>
+                    <option value="">Air Busan</option>
+                    <option value="">Costa Air</option>
+                    <option value="">Estar Air</option>
+                    <option value="">Peach</option>
+                    <option value="">Star Flyer</option>
+                  </select>
+
+                  <label for="Airline">Flight Number</label>
+                  <select class="Airline" name="Airline">
+                    <option value="">1234</option>
+                  </select>
+
+                  <button class="search-btn" type="button" name="button">SEARCH</button>
+
+                </form>
+              </div>
+      			</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="section s1">
+
+        <div class="slide" id="slide1">
+
+          <div class="terminal2" data-aos-easing="linear" data-aos-duration="900" data-aos="fade-down">
+            <h1>TERMINAL 1</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fas fa-shopping-basket"></i>
+                  <h2 class="sub-title">TAX FREE</h2>
+                  <p class="terminal1-cnotents" style="font-size:13px">
+                    세계 최고의 인천국제공항에서 세계 최고의 면세점 쇼핑을 – 신라면세점 인천공항점 제1여객터미널
+                    신라면세점 인천공항점에서 세계 최고 수준의 면세쇼핑을 경험하십시오.
+                    서편 42번 Gate에서는 국내외 다양한 화장품, 향수 브랜드와 주류, 담배 매장을 만나실 수 있습니다.
+                    동편 26번 Gate에서는 공항 유일의 럭셔리 시계 편집샵과 선글라스 편집샵 등 패션 아이템을 쇼핑하세요.
+                  </p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-subway"></i>
+                  <h2 class="sub-title">TRANSPORTATION</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-utensils"></i>
+                  <h2 class="sub-title">FOOD CORT</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-user"></i>
+                  <h2 class="sub-title">FACILITY</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-info"></i>
+                  <h2 class="sub-title">INFOMATION</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-parking"></i>
+                  <h2 class="sub-title">PARKING</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+            </ul>
+
+  		  </div> <!--terminal2 end-->
+
+          <div class="parallax-window" data-parallax="scroll" data-image-src="main2-1.jpg">
+            <div class="terminal2-mobile"  data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-down">
+              <h1 class="terminal1-mobile2">TERMINAL 1</h1>
+                <div class="swiper-container">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <i class="fas fa-shopping-basket"></i>
+                        <h2 class="sub-title">TAX FREE</h2>
+                        <p class="terminal1-cnotents" style="font-size:13px">
+                          세계 최고의 인천국제공항에서 세계 최고의 면세점 쇼핑을 – 신라면세점 인천공항점 제1여객터미널
+                          신라면세점 인천공항점에서 세계 최고 수준의 면세쇼핑을 경험하십시오.
+                          서편 42번 Gate에서는 국내외 다양한 화장품, 향수 브랜드와 주류, 담배 매장을 만나실 수 있습니다.
+                          동편 26번 Gate에서는 공항 유일의 럭셔리 시계 편집샵과 선글라스 편집샵 등 패션 아이템을 쇼핑하세요.
+                        </p>
+                      </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <i class="fas fa-subway"></i>
+                        <h2 class="sub-title">TRANSPORTATION</h2>
+                        <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <h2 class="sub-title">FOOD CORT</h2>
+                        <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <i class="fas fa-user"></i>
+                        <h2 class="sub-title">FACILITY</h2>
+                        <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <i class="fas fa-info"></i>
+                        <h2 class="sub-title">INFOMATION</h2>
+                        <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </a>
+                    </li>
+
+                    <li class="swiper-slide">
+                      <a href="#">
+                        <i class="fas fa-parking"></i>
+                        <h2 class="sub-title">PARKING</h2>
+                        <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                      </a>
+                    </li>
+
+                  </ul> <!--swiper wrapper end-->
+                </div> <!--swiper container end-->
+
+            </div> <!-- terminal1 mobile end-->
+          </div> <!--parallax-window-->
+
+        </div> <!--slide1-->
+        <!-- ================================================================================= -->
+
+  	    <div class="slide" id="slide2">
+          <div class="terminal2" data-aos-easing="linear" data-aos-duration="900" data-aos="fade-down">
+            <h1>TERMINAL 2</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fas fa-shopping-basket"></i>
+                  <h2 class="sub-title">TAX FREE</h2>
+                  <p class="terminal1-cnotents" style="font-size:13px">
+                    세계 최고의 인천국제공항에서 세계 최고의 면세점 쇼핑을 – 신라면세점 인천공항점 제1여객터미널
+                    신라면세점 인천공항점에서 세계 최고 수준의 면세쇼핑을 경험하십시오.
+                    서편 42번 Gate에서는 국내외 다양한 화장품, 향수 브랜드와 주류, 담배 매장을 만나실 수 있습니다.
+                    동편 26번 Gate에서는 공항 유일의 럭셔리 시계 편집샵과 선글라스 편집샵 등 패션 아이템을 쇼핑하세요.
+                  </p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-subway"></i>
+                  <h2 class="sub-title">TRANSPORTATION</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-utensils"></i>
+                  <h2 class="sub-title">FOOD CORT</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-user"></i>
+                  <h2 class="sub-title">FACILITY</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-info"></i>
+                  <h2 class="sub-title">INFOMATION</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-parking"></i>
+                  <h2 class="sub-title">PARKING</h2>
+                  <p class="terminal1-cnotents">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </a>
+              </li>
+
+            </ul>
+
+  		  </div> <!--terminal2 end-->
+
+      </div> <!--slide2 end-->
+
+    </div> <!--section s1 end-->
+
+      <div class="section s2">
+        <video autoplay muted loop id="myVideo">
+          <source src="airport.mp4" type="video/mp4">
+        </video>
+      </div> <!--section s2 end-->
+
+      <div class="section s3">
+        <div class="s3-wrap">
+          <h1 data-aos-easing="linear" data-aos-duration="900" data-aos="fade-down">How To Get to Incheon Airport</h1>
+          <div class="img-magnifier-container s3-left">
+            <img class="guide-map" id="guide-map" src="img/map.png" alt="" data-aos-easing="linear" data-aos-duration="900" data-aos="fade-right" data-aos-delay="900">
+          </div>
+
+          <div class="s3-right" data-aos-easing="linear" data-aos-duration="900" data-aos="fade-right" data-aos-delay="1200">
+            <button class="accordion-right">자가용을 이용하시는 경우</button>
+            <div class="panel">
+              <p style="color:#000">
+                ㆍ여객터미널의 버스와 승요차(택시포함)의 진입로가 분리되어 있으니 도로안내표지의 승용차ㆍ택시용 진입차선을 반드시 지켜서 진입하셔야 됩니다.<br><br>
+                ㆍ출발층(고가도로, 3층)에서는 택시, 승용차 구분 없이 이용하시는 항공사와 가까운 위치에서 승·하차 하실 수 있습니다. 단, 승·하차를 위한 5분 이상의 정차는 불가합니다<br><br>
+                ㆍ도착층(지상, 1층)에서는 택시의 정차위치가 지정되어 있으니 지정된 위치에서 정차 후 승·하차하셔야 합니다.<br><br>
+                ㆍ출발·도착층에서는 장시간의 정차가 허용되지 않으니 승·하차 후 즉시 출발하여 주시기 바랍니다.<br>
+              </p>
+            </div>
+
+            <button class="accordion-right">대중교통을 이용하시는 경우</button>
+            <div class="panel" style="color:#000">
+              <p>리무진</p>
+              <p>공항도착 : 출발지 - 제 1여객터미널 - 제 2여객터미널도착</p>
+              <p>공항출발 : 제 2여객터미널 - 제 1여객터미널 - 목적지도착</p>
+              <br>
+              <p>공항철도</p>
+              <p>인천공항 제1터미널</p>
+              <p>일반열차 - 05:25 ~ 23:57</p>
+              <p>직통열차 - 05:23 ~ 22:48</p>
+              <br>
+              <p>인천공항 제2터미널</p>
+              <p>일반열차 - 05:18 ~ 23:50</p>
+              <p>직통열차 - 05:15 ~ 22:40</p>
+            </div>
+
+            <button class="accordion-right">제 1여객터미널</button>
+            <div class="panel" style="color:#000">
+              <p>도로명 주소 : (22382) 인천시 중구 공항로 272</p>
+              <p>지번주소 : (22382) 인천시 중구 운서동 2840</p>
+              <p>전화 : 1577-2600</p>
+              <p>팩스 : 032)741-2450</p>
+            </div>
+
+            <button class="accordion-right">제 2여객터미널</button>
+            <div class="panel" style="color:#000">
+              <p>도로명 주소 : (22382) 인천시 중구 공항로 272</p>
+              <p>지번주소 : (22382) 인천시 중구 운서동 2840</p>
+              <p>전화 : 1577-2600</p>
+              <p>팩스 : 032)741-2450</p>
+            </div>
+
+          </div> <!--s3-right end-->
+
+        </div> <!--s3-wrap end-->
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="airport.jpg">
+          <h1 data-aos-easing="linear" data-aos-duration="900" data-aos="fade-down">How To Get to Incheon Airport</h1>
+          <div class="img-magnifier-container s3-left">
+            <img class="guide-map" id="guide-map" src="img/map.png" alt="" data-aos-easing="linear" data-aos-duration="900" data-aos="fade-right" data-aos-delay="900">
+          </div>
+
+
+          <div class="s3-right" data-aos-easing="linear" data-aos-duration="900" data-aos="fade-right" data-aos-delay="1200">
+            <button class="accordion-right">자가용을 이용하시는 경우</button>
+            <div class="panel">
+              <p style="color:#000">
+                ㆍ여객터미널의 버스와 승요차(택시포함)의 진입로가 분리되어 있으니 도로안내표지의 승용차ㆍ택시용 진입차선을 반드시 지켜서 진입하셔야 됩니다.<br><br>
+                ㆍ출발층(고가도로, 3층)에서는 택시, 승용차 구분 없이 이용하시는 항공사와 가까운 위치에서 승·하차 하실 수 있습니다. 단, 승·하차를 위한 5분 이상의 정차는 불가합니다<br><br>
+                ㆍ도착층(지상, 1층)에서는 택시의 정차위치가 지정되어 있으니 지정된 위치에서 정차 후 승·하차하셔야 합니다.<br><br>
+                ㆍ출발·도착층에서는 장시간의 정차가 허용되지 않으니 승·하차 후 즉시 출발하여 주시기 바랍니다.<br>
+              </p>
+            </div>
+
+            <button class="accordion-right">대중교통을 이용하시는 경우</button>
+            <div class="panel" style="color:#000">
+              <p>리무진</p>
+              <p>공항도착 : 출발지 - 제 1여객터미널 - 제 2여객터미널도착</p>
+              <p>공항출발 : 제 2여객터미널 - 제 1여객터미널 - 목적지도착</p>
+              <br>
+              <p>공항철도</p>
+              <p>인천공항 제1터미널</p>
+              <p>일반열차 - 05:25 ~ 23:57</p>
+              <p>직통열차 - 05:23 ~ 22:48</p>
+              <br>
+              <p>인천공항 제2터미널</p>
+              <p>일반열차 - 05:18 ~ 23:50</p>
+              <p>직통열차 - 05:15 ~ 22:40</p>
+            </div>
+
+            <button class="accordion-right">제 1여객터미널</button>
+            <div class="panel" style="color:#000">
+              <p>도로명 주소 : (22382) 인천시 중구 공항로 272</p>
+              <p>지번주소 : (22382) 인천시 중구 운서동 2840</p>
+              <p>전화 : 1577-2600</p>
+              <p>팩스 : 032)741-2450</p>
+            </div>
+
+            <button class="accordion-right">제 2여객터미널</button>
+            <div class="panel" style="color:#000">
+              <p>도로명 주소 : (22382) 인천시 중구 공항로 272</p>
+              <p>지번주소 : (22382) 인천시 중구 운서동 2840</p>
+              <p>전화 : 1577-2600</p>
+              <p>팩스 : 032)741-2450</p>
+            </div>
+            </div>
+          </div> <!--parallax window end-->
+      </div> <!--section s3-->
+
+      <div class="section s4 footer">
+        <div class="footer-wrap">
+
+          <div class="footer-left">
+            <h2>ADDRESS</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <br>
+            <i class="fas fa-phone-alt">  010-2062-1872</i><br>
+            <i class="fas fa-envelope">  guwonmo2@gmail.com</i><br>
+            <ul>
+
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+
+          <div class="footer-center">
+            <h2>QUICK LINKS</h2>
+            <ul>
+              <li><a href="#" style="font-weight:bold">About COVID-19</a></li>
+              <li><a href="#">StartㆍArrive</a></li>
+              <li><a href="#">TrafficㆍParking</a></li>
+              <li><a href="#">Shopping</a></li>
+              <li><a href="#">Restaurant</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Servie</a></li>
+              <li><a href="#">Tax Free</a></li>
+              <li><a href="collaboration.html">Facilities</a></li>
+              <li><a href="#">Airport Guide Map</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+
+          </div>
+
+          <div class="footer-right">
+            <h2>CONTACT US</h2>
+            <form>
+              <input type="text" class="contact-email" placeholder="Your Email Addrress">
+              <input type="text" class="contact-form" placeholder="Message...">
+            </form>
+
+            <div class="btn-container">
+              <button class="send-btn" type="button" name="button">
+                <i class="fas fa-paper-plane">  Send</i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- flight toggle -->
+    <script>
+    	$(document).ready(function(){
+        $('.flight-toggle>ul>li>div:first').show();
+    		var m=$('.flight-toggle>ul>li>a'); //바뀌는 대상
+    		var div=$('.flight-toggle>ul>li>div');
+    		m.each(function(){
+    			$(this).click(function(){
+    				// $(this).next().slideToggle(400).parent().siblings().find('div:visible').slideUp(400);
+            $(this).next().slideToggle(400).parent().siblings().find('div:visible').slideUp(400);
+    				console.log(m);
+    			});
+    		});
+    	});
+    </script>
+
+    <!-- flight toggle tabmenu -->
+    <script>
+      $(function(){
+        $('.tab-container:first').show();
+        $('.flight-toggle-page1>ul>li:first').addClass('active');
+
+        $('.flight-toggle-page1>ul>li').click(function(event) {
+          index = $(this).index();
+          $('.flight-toggle-page1>ul>li').removeClass('active');
+          $(this).addClass('active');
+          $('.tab-container').hide();
+          $('.tab-container').eq(index).show();
+        })
+      })
+    </script>
+
+    <!-- flight toggle tab menu in tab -->
+    <script>
+      $(function(){
+        $('.tab-container2:first').show();
+        $('.tab-container>ul>li:first').addClass('active2');
+        $('.tab-container>ul>li').click(function(event) {
+          index = $(this).index();
+          $('.tab-container>ul>li').removeClass('active2');
+          $(this).addClass('active2');
+          $('.tab-container2').hide();
+          $('.tab-container2').eq(index).show();
+        })
+      })
+    </script>
+
+    <!-- flight toggle tab menu in tab -->
+    <script>
+      $(function(){
+        $('.tab-container3:first').show();
+        $('.tab-container>ul>li:first').addClass('active3');
+        $('.tab-container>ul>li').click(function(event) {
+          index = $(this).index();
+          $('.tab-container>ul>li').removeClass('active3');
+          $(this).addClass('active3');
+          $('.tab-container3').hide();
+          $('.tab-container3').eq(index).show();
+        })
+      })
+    </script>
+
+    <!-- text fade-in,fade-out library -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- header sticky -->
+    <script>
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 150) {
+          $('header').addClass("sticky");
+        } else {
+          $('header').removeClass("sticky");
+        }
+      })
+    </script>
+
+    <!-- 모니터의  width값이 1025이상일때만 지도의 돋보기가 보임 -->
+    <script>
+      if($(window).width() > 1025) {
+        function magnify(imgID, zoom) {
+          var img, glass, w, h, bw;
+          img = document.getElementById(imgID);
+
+          /*create magnifier glass:*/
+          glass = document.createElement("DIV"); //div 생성
+          glass.setAttribute("class", "img-magnifier-glass"); //class이름을 img-magnifier-glass로 할당
+
+          /*insert magnifier glass:*/
+          img.parentElement.insertBefore(glass, img);
+          //parentElement는 상위요소의 이름을 가져올 수 있음
+          //insertBefore은
+
+          /*set background properties for the magnifier glass:*/
+          glass.style.backgroundImage = "url('" + img.src + "')";
+          glass.style.backgroundRepeat = "no-repeat";
+          glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+          bw = 3;
+          w = glass.offsetWidth / 2;
+          h = glass.offsetHeight / 2;
+
+          /*execute a function when someone moves the magnifier glass over the image:*/
+          glass.addEventListener("mousemove", moveMagnifier);
+          img.addEventListener("mousemove", moveMagnifier);
+          /*and also for touch screens:*/
+          glass.addEventListener("touchmove", moveMagnifier);
+          img.addEventListener("touchmove", moveMagnifier);
+
+          function moveMagnifier(e) {
+            var pos, x, y;
+            /*prevent any other actions that may occur when moving over the image*/
+            e.preventDefault();
+            /*get the cursor's x and y positions:*/
+            pos = getCursorPos(e);
+            x = pos.x;
+            y = pos.y;
+            /*prevent the magnifier glass from being positioned outside the image:*/
+            if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+            if (x < w / zoom) {x = w / zoom;}
+            if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+            if (y < h / zoom) {y = h / zoom;}
+            /*set the position of the magnifier glass:*/
+            glass.style.left = (x - w) + "px";
+            glass.style.top = (y - h) + "px";
+            /*display what the magnifier glass "sees":*/
+            glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+          }
+
+          function getCursorPos(e) {
+            var a, x = 0, y = 0;
+            e = e || window.event;
+
+            /*get the x and y positions of the image:*/
+            a = img.getBoundingClientRect();
+
+            /*calculate the cursor's x and y coordinates, relative to the image:*/
+            x = e.pageX - a.left;
+            y = e.pageY - a.top;
+
+            /*consider any page scrolling:*/
+            x = x - window.pageXOffset;
+            y = y - window.pageYOffset;
+            return {x : x, y : y};
+          }
+        }
+          magnify("guide-map",2);
+      }
+    </script>
+
+    <!-- width값이 768이상일때만 'fullpage.js'가 적용되도록 하는 조건문 -->
+    <script>
+      if($(window).width() > 768) {
+        new fullpage('#full-page',{
+          navigationTooltips: ['Main', 'Terminal Guide', 'Promotion Video', 'Map', 'Footer'],
+          navigation: true,
+          scrollingSpeed:1200,
+          onLeave:function() {
+            jQuery('.section [data-aos]').removeClass("aos-animate");
+          },
+          onSlideLeave: function() {
+            jQuery('.slide [data-aos]').removeClass("aos-animate");
+          },
+          afterSlideLoad:function() {
+            jQuery('.slide.active [data-aos]').addClass("aos-animate");
+          },
+          afterLoad:function() {
+            jQuery('.section.active [data-aos]').addClass("aos-animate");
+            jQuery('.fp-table.active .aos-init').addClass('aos-animate');
+          }
+        });
+      }
+    </script>
+
+    <!-- width값이 400 이하 일때만 swiper.js가 적용되도록 하는 조건문 -->
+    <script>
+      if($(window).width() < 400) {
+        var swiper = new Swiper('.swiper-container', {
+         slidesPerView: 1,
+         spaceBetween: 50,
+         pagination: {
+           el: '.swiper-pagination',
+           clickable: true,
+         },
+       });
+      }
+    </script>
+
+    <!-- width값이 500 이하 일때만 parallax.js가 적용되도록 하는 조건문 -->
+    <script>
+      if ($(window).width() < 500) {
+        $('.s0>.parallax-window').parallax({imageSrc: 'main1.jpg'});
+        $('.s1>.parallax-window').parallax({imageSrc: 'main2-1.jpg'});
+        $('.s3>.parallax-window').parallax({imageSrc: 'airport.jpg'});
+      }
+    </script>
+
+    <!-- submenu -->
+    <script>
+      function menuToggle() {
+        var nav = document.getElementById('nav');
+        var toggle = document.getElementById('toggle');
+        nav.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+    </script>
+
+  <!-- section s3 accrodion -->
+    <script>
+    var acc = document.getElementsByClassName("accordion-right");
+    var i;
+
+      for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active-right");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> --> <!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> <!-- jquery library -->
+    <script src="js/parallax.js"></script> <!-- parrallax library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- fade in library -->
+    <link rel="stylesheet" href="css/food.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- fade in css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <h1>
+          <a href="index.html">
+            <img class="logo-gray" src="logo-gray.png">
+            <img class="logo-white" src="logo-white.png">
+            <p>Incheon Airport</p>
+          </a>
+        </h1>
+
+        <div class="fullpageMenu" id="nav">
+          <div class="banner">
+            <img src="img/navigation-img4.jpg" alt="">
+          </div>
+
+          <div class="nav">
+            <ul>
+              <li><a href="collaboration.html" data-text="Facility">Facility</a></li>
+              <li><a href="#" data-text="Guide Map">Guide Map</a></li>
+              <li><a href="#" data-text="Login">Login</a></li>
+              <li><a href="#" data-text="Sign Up">Sign Up</a></li>
+              <li><a href="#" data-text="Departure Arrival">Departure Arrival</a></li>
+              <li><a href="#" data-text="Parking">Parking</a></li>
+              <li><a href="food.html" data-text="Restaurant">Restaurant</a></li>
+              <li><a href="#" data-text="Service">Service</a></li>
+            </ul>
+          </div>
+          <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+
+        </div>
+
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="img/bibim2.jpg">
+        <div class="content-inner">
+          <p data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-mirror="true">INCHEON AIRPORT</p>
+          <h1 data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">RESTAURANT</h1>
+          <ul>
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="600">
+              <a href="#" >
+                <i class="fas fa-bullhorn"></i>
+                <p>NOTICE</p>
+              </a>
+            </li>
+
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="1100">
+              <a href="#">
+                <i class="fas fa-gift"></i>
+                <p>EVENT</p>
+              </a>
+            </li>
+
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="1600">
+              <a href="#">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>MAP</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section1">
+        <div class="section1-left">
+          <div class="section1-left-text">
+            <p>TERMINAL1</p>
+            <p>RESTAURANT</p>
+            <span>Bring your taste buds on an adventure and indulge to your heart's content.</span>
+          </div>
+          <img src="img/hambuger.png" alt="">
+        </div>
+
+        <div class="section1-right">
+            <div class="section1-right-box swiper-container">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <img src="img/paris.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">파리 바게트</span><br><br>
+                    Opening Hours - 07:00 ~ 19:00<br>
+                    Products - 커피, 도너츠, 음료, 샌드위치<br>
+                    Contact - 032 743 8317<br>
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/dunkin.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">던킨 도너츠</span><br><br>
+                    Opening Hours - 07:00 ~ 19:00<br>
+                    Products - 커피, 도너츠, 음료, 샌드위치<br>
+                    Contact - 032 743 8317<br>
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/gongcha.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">공차</span><br><br>
+                    Opening Hours - 07:00 ~ 20:00<br>
+                    Products - 밀크티, 주스, 스무디, 커피<br>
+                    Contact - 032 743 8630<br>
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/baskinrabins.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">베스킨 라빈스</span><br><br>
+                    Opening Hours - 06:00 ~ 22:00<br>
+                    Products - 아이스크림, 커피, 음료<br>
+                    Contact - 032 743 8320<br>
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/starbucks.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">스타벅스</span><br><br>
+                    Opening Hours - 06:00 ~ 18:00<br>
+                    Products - 커피, 음료, 머핀<br>
+                    Contact - 032 743 8261<br>
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/nolbu.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">놀부 부대찌개</span><br><br>
+                    Opening Hours - 06:00 ~ 22:00<br>
+                    Products - 놀부부대, 보쌈<br>
+                    Contact - 032 743 4833<br>
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/macdonald.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">맥도날드</span><br><br>
+                    Opening Hours - 06:00 ~ 22:00<br>
+                    Products - 햄버거, 치킨, 디저트, 음료<br>
+                    Contact - 032 743 2370<br>
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="img/burgerking.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">버거킹</span><br><br>
+                    Opening Hours - 08:00 ~ 20:30<br>
+                    Products - 햄버거, 치킨, 음료<br>
+                    Contact - 032 743 0322<br>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+        </div> <!-- section1-right end -->
+
+        <div class="section1-right-box-mobile">
+          <div class="section1-right-box-mobile-wrap">
+            <ul>
+              <li>
+                <img src="img/paris.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">파리 바게트</span><br><br>
+                  Opening Hours - 07:00 ~ 19:00<br>
+                  Products - 커피, 도너츠, 음료, 샌드위치<br>
+                  Contact - 032 743 8317<br>
+                </p>
+              </li>
+
+              <li>
+                <img src="img/dunkin.png" alt="">
+                <p>
+                    <span style="font-size:18px;font-weight:bold">던킨 도너츠</span><br><br>
+                    Opening Hours - 07:00 ~ 19:00<br>
+                    Products - 커피, 도너츠, 음료, 샌드위치<br>
+                    Contact - 032 743 8317<br>
+                  </p>
+              </li>
+
+              <li>
+                  <img src="img/gongcha.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">공차</span><br><br>
+                    Opening Hours - 07:00 ~ 20:00<br>
+                    Products - 밀크티, 주스, 스무디, 커피<br>
+                    Contact - 032 743 8630<br>
+                  </p>
+              </li>
+
+              <li>
+                  <img src="img/baskinrabins.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">베스킨 라빈스</span><br><br>
+                    Opening Hours - 06:00 ~ 22:00<br>
+                    Products - 아이스크림, 커피, 음료<br>
+                    Contact - 032 743 8320<br>
+                  </p>
+              </li>
+
+              <li>
+                  <img src="img/starbucks.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">스타벅스</span><br><br>
+                    Opening Hours - 06:00 ~ 18:00<br>
+                    Products - 커피, 음료, 머핀<br>
+                    Contact - 032 743 8261<br>
+                  </p>
+              </li>
+
+              <li>
+                  <img src="img/nolbu.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">놀부 부대찌개</span><br><br>
+                    Opening Hours - 06:00 ~ 22:00<br>
+                    Products - 놀부부대, 보쌈<br>
+                    Contact - 032 743 4833<br>
+                  </p>
+              </li>
+
+              <li>
+                  <img src="img/macdonald.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">맥도날드</span><br><br>
+                    Opening Hours - 06:00 ~ 22:00<br>
+                    Products - 햄버거, 치킨, 디저트, 음료<br>
+                    Contact - 032 743 2370<br>
+                  </p>
+              </li>
+
+              <li>
+                  <img src="img/burgerking.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">버거킹</span><br><br>
+                    Opening Hours - 08:00 ~ 20:30<br>
+                    Products - 햄버거, 치킨, 음료<br>
+                    Contact - 032 743 0322<br>
+                  </p>
+              </li>
+
+            </ul>
+          </div> <!--section1-right-box-mobile-wrap end-->
+        </div> <!--section1-right-box-mobile end-->
+
+      </div> <!--section1-->
+
+      <div class="section1-2">
+
+        <div class="section1-2-right">
+          <div class="section1-2-right-text">
+            <p>TERMINAL2</p>
+            <p>RESTAURANT</p>
+            <span>Bring your taste buds on an adventure and indulge to your heart's content.</span>
+          </div>
+          <img src="img/bulgogi.png" alt="">
+        </div>
+
+        <div class="section1-2-left">
+          <div class="section1-2-left-box swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/paris.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">파리 바게트</span><br><br>
+                  Opening Hours - 07:00 ~ 19:00<br><br>
+                  Products - 커피, 도너츠, 음료, 샌드위치<br><br>
+                  Contact - 032 743 8317<br><br>
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/dunkin.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">던킨 도너츠</span><br><br>
+                  Opening Hours - 07:00 ~ 19:00<br>
+                  Products - 커피, 도너츠, 음료, 샌드위치<br>
+                  Contact - 032 743 8317<br>
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/gongcha.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">공차</span><br><br>
+                  Opening Hours - 07:00 ~ 20:00<br>
+                  Products - 밀크티, 주스, 스무디, 커피<br>
+                  Contact - 032 743 8630<br>
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/baskinrabins.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">베스킨 라빈스</span><br><br>
+                  Opening Hours - 06:00 ~ 22:00<br>
+                  Products - 아이스크림, 커피, 음료<br>
+                  Contact - 032 743 8320<br>
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/starbucks.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">스타벅스</span><br><br>
+                  Opening Hours - 06:00 ~ 18:00<br>
+                  Products - 커피, 음료, 머핀<br>
+                  Contact - 032 743 8261<br>
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/nolbu.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">놀부 부대찌개</span><br><br>
+                  Opening Hours - 06:00 ~ 22:00<br>
+                  Products - 놀부부대, 보쌈<br>
+                  Contact - 032 743 4833<br>
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/macdonald.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">맥도날드</span><br><br>
+                  Opening Hours - 06:00 ~ 22:00<br>
+                  Products - 햄버거, 치킨, 디저트, 음료<br>
+                  Contact - 032 743 2370<br>
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="img/burgerking.png" alt="">
+                <p>
+                  <span style="font-size:18px;font-weight:bold">버거킹</span><br><br>
+                  Opening Hours - 08:00 ~ 20:30<br>
+                  Products - 햄버거, 치킨, 음료<br>
+                  Contact - 032 743 0322<br>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section1-2-left-box-mobile">
+            <div class="section1-2-left-box-mobile-wrap">
+              <ul>
+                <li>
+                  <img src="img/paris.png" alt="">
+                  <p>
+                    <span style="font-size:18px;font-weight:bold">파리 바게트</span><br><br>
+                    Opening Hours - 07:00 ~ 19:00<br>
+                    Products - 커피, 도너츠, 음료, 샌드위치<br>
+                    Contact - 032 743 8317<br>
+                  </p>
+                </li>
+
+                <li>
+                  <img src="img/dunkin.png" alt="">
+                  <p>
+                      <span style="font-size:18px;font-weight:bold">던킨 도너츠</span><br><br>
+                      Opening Hours - 07:00 ~ 19:00<br>
+                      Products - 커피, 도너츠, 음료, 샌드위치<br>
+                      Contact - 032 743 8317<br>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/gongcha.png" alt="">
+                    <p>
+                      <span style="font-size:18px;font-weight:bold">공차</span><br><br>
+                      Opening Hours - 07:00 ~ 20:00<br>
+                      Products - 밀크티, 주스, 스무디, 커피<br>
+                      Contact - 032 743 8630<br>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/baskinrabins.png" alt="">
+                    <p>
+                      <span style="font-size:18px;font-weight:bold">베스킨 라빈스</span><br><br>
+                      Opening Hours - 06:00 ~ 22:00<br>
+                      Products - 아이스크림, 커피, 음료<br>
+                      Contact - 032 743 8320<br>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/starbucks.png" alt="">
+                    <p>
+                      <span style="font-size:18px;font-weight:bold">스타벅스</span><br><br>
+                      Opening Hours - 06:00 ~ 18:00<br>
+                      Products - 커피, 음료, 머핀<br>
+                      Contact - 032 743 8261<br>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/nolbu.png" alt="">
+                    <p>
+                      <span style="font-size:18px;font-weight:bold">놀부 부대찌개</span><br><br>
+                      Opening Hours - 06:00 ~ 22:00<br>
+                      Products - 놀부부대, 보쌈<br>
+                      Contact - 032 743 4833<br>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/macdonald.png" alt="">
+                    <p>
+                      <span style="font-size:18px;font-weight:bold">맥도날드</span><br><br>
+                      Opening Hours - 06:00 ~ 22:00<br>
+                      Products - 햄버거, 치킨, 디저트, 음료<br>
+                      Contact - 032 743 2370<br>
+                    </p>
+                </li>
+
+                <li>
+                    <img src="img/burgerking.png" alt="">
+                    <p>
+                      <span style="font-size:18px;font-weight:bold">버거킹</span><br><br>
+                      Opening Hours - 08:00 ~ 20:30<br>
+                      Products - 햄버거, 치킨, 음료<br>
+                      Contact - 032 743 0322<br>
+                    </p>
+                </li>
+
+              </ul>
+            </div> <!--section1-2-right-box-mobile-wrap end-->
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="section2">
+        <h1 data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-down">VARIETY DINING GUIDE</h1>
+        <div class="section2-top" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-down" >
+          <img src="img/hallal.png" alt="">
+
+          <p>
+            <span>Halal Food</span>
+            이슬람에서 허용한 식품을 뜻한다. 곡물, 과일, 채소의 경우 특별한 규정은 없으나 육류의 경우는 엄정한 규칙을 따른다. 이슬람식 도축법인 다비하(Dhabihah)식으로 도살한 짐승의 고기와 그 고기를 가지고 만든 육류만 할랄 육류로 분류된다. 할랄이라는 말은 아랍어로 '허용된 것'이라는 뜻이 있으며, 말 그대로 이슬람 율법에 허용된 것이다. 반대말은 '허용되지 않은 것'이라는 뜻의 하람(Haram)[2]이다. 이슬람에서 이것만은 먹으면 안 된다는 금지된 음식. 굳이 할랄 방식으로 도살한 고기가 아니더라도 이슬람 율법에 하자가 없는 음식은 다 할랄 푸드로 부르기도 한다.
+          </p>
+        </div>
+
+        <div class="section2-bot" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="500">
+          <img src="img/begun.png" alt="">
+          <p>
+            <span>Vegan Food</span>
+            고기 등 동물성 식품을 제외[2]한, 과일, 곡식, 야채 등 식물성 음식으로 구성된 식단을 섭취하는 행위를 채식이라 하며, 이러한 식습관을 견지하는 생활 양식을 채식주의라 이른다. 채식주의는 개인적 사정에서부터 동물권과 종교 등 구체적인 신념에 이르기까지 다양한 실천 동기를 갖는다.
+            설령 채식주의자라고 해도, 한 끼 식사를 어쩌다 고기와 먹는다고 해서 채식을 포기한 것으로 여겨지지는 않는다. 인간은 사회를 이루고 살아가는 동물이며, 신념 못지않게 대인관계가 중요시되므로, 채식을 하지 않는 사람의 비중이 압도적으로 큰 사회생활 중에 어쩔 수 없이 몇 번 정도 채식을 중단해야 할 때가 있다.
+          </p>
+        </div>
+      </div>
+
+      <div class="section3">
+
+        <div id="id01" class="modal">
+          <form class="modal-content animate">
+            <div class="imgcontainer">
+              <i class="fas fa-times"></i>
+
+              <div id="gallery">
+                <div class="gallery-left">
+                  <p id="photo">
+                    <img src="img/gallery-korea-big.jpg">
+                  </p>
+                </div>
+
+                <div class="gallery-right">
+                  <div id="photo_list">
+                    <ul id="inner_list">
+                      <li><a href="img/gallery-korea-big.jpg"><img src="img/gallery-korea-small1.jpg" class="pic_t1"></a></li>
+                			<li><a href="img/gallery-korea-big2.jpg"><img src="img/gallery-korea-small2.jpg"></a></li>
+                			<li><a href="img/gallery-korea-big3.jpg"><img src="img/gallery-korea-small3.jpg"></a></li>
+                    </ul>
+
+                    <p>
+                      한국 전쟁이 일어난 후 한국은 먹거리가 부족하게 되었다. 이에 미군과 관련된 일을 하던 한국사람들이 경기도 동두천시와 양주시, 의정부시, 평택시에 주둔하던 미군 부대의 핫도그나 깡통에 든 햄(예를 들어 스팸)을 이용하여 고추장과 함께 찌개를 만들었다. 초기에는 미군이 먹다 남거나 미군의 보급품을 몰래 빼낸 음식을 재료로 사용하였기에 부대찌개라는 명칭으로 불렸다. 이 부대찌개는 가난을 벗어난 한국에서 여전히 인기가 있고 현대의 즉석 음식인 라면을 첨가하기도 한다.
+                    </p>
+
+                    <p>
+                      <i class="far fa-clock"></i>
+                      <span> 영업시간 - 06:00 ~ 22:00</span><br>
+
+                      <br>
+
+                      <i class="fas fa-phone-alt"></i>
+                      <span> 연락처 - 032 743 4833</span><br>
+
+                      <br>
+
+                      <i class="fas fa-utensils"></i>
+                      <span> 주요상품 - 놀부부대ㆍ보쌈 </span><br>
+
+                      <br>
+
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span> 위치 - <span style="color:#4674c9;cursor:pointer">제1여객터미널 일반구역 4층 동편</span></span><br>
+
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+        <h2 data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-down">FOOD FROM AROUND THE WORLD</h2>
+        <ul class="section3-food" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-down">
+          <li>
+            <a>
+              <img class="active-screen" src="img/korea.jpg" style="cursor:pointer" onclick="document.getElementById('id01').style.display='block'">
+              <h3>KOREA 'Budae Stew'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/india.jpg">
+              <h3>INDIA 'Nasi Goreng'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/italy.jpg">
+              <h3>ITALY 'Pizza'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/japan.jpg">
+              <h3>JAPAN 'Susi'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/china.jpg">
+              <h3>CHINA 'Lamb Skewers'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/mexico.jpg">
+              <h3>MEXICO 'Burrito'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/rusia.jpg">
+              <h3>RUSIA 'Shaslick'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/taiwan.jpg">
+              <h3>TAIWAN 'Dim Sum'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/usa.jpg">
+              <h3>AMERICA 'Hambuger'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/vietnam.jpg">
+              <h3>VIETNAM 'Rice Noodles'</h3>
+              <p>TERMINAL1, TERMINAL2</p>
+              <p>PUBLIC</p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="section4">
+        <div class="section4-left">
+          <img src="img/steak.png" alt="">
+        </div>
+
+        <div class="section4-right">
+          <div class="section4-right-list">
+            <a href="#">▶  MORE DINING LIST</a>
+            <a href="#">▶  PROMOTION</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-wrap">
+
+        <div class="footer-left">
+          <h2>ADDRESS</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <br>
+          <i class="fas fa-phone-alt">  010-2062-1872</i><br>
+          <i class="fas fa-envelope">  guwonmo2@gmail.com</i><br>
+          <ul>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="footer-center">
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li><a href="#" style="font-weight:bold">About COVID-19</a></li>
+            <li><a href="#">StartㆍArrive</a></li>
+            <li><a href="#">TrafficㆍParking</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Restaurant</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Servie</a></li>
+            <li><a href="#">Tax Free</a></li>
+            <li><a href="collaboration.html">Facilities</a></li>
+            <li><a href="#">Airport Guide Map</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+
+        </div>
+
+        <div class="footer-right">
+          <h2>CONTACT US</h2>
+          <form>
+            <input type="text" class="contact-email" placeholder="Your Email Addrress">
+            <input type="text" class="contact-form" placeholder="Message...">
+          </form>
+
+          <div class="btn-container">
+            <button class="send-btn" type="button" name="button">
+              <i class="fas fa-paper-plane">  Send</i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <button id="btnScroll">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <!-- parallax js -->
+    <script>
+      $('.parallax-window').parallax({imageSrc: 'img/bibim2.jpg'});
+    </script>
+
+    <!-- AOS js -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- header sticky -->
+    <script>
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 150) {
+          $('header').addClass("sticky");
+        } else {
+          $('header').removeClass("sticky");
+        }
+      })
+    </script>
+
+    <script>
+      $(function(){
+        $('.section3-food>li>a>img').hover(function(){
+          $(this).addClass("active-screen");
+        })
+      })
+    </script>
+
+    <!--terminal tab menu -->
+    <script>
+      $(function() {
+        $('.tab-container:first').show();
+        $('.terminal-tab li:first').addClass('active1');
+
+        $('.terminal-tab li').click(function(event) {
+          index = $(this).index();
+          $('.terminal-tab li').removeClass('active1');
+          $(this).addClass('active1');
+          $('.tab-container').hide();
+          $('.tab-container').eq(index).show();
+        })
+      })
+    </script>
+
+    <!-- scroll -->
+    <script>
+      $("#btnScroll").hide();
+      $(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop()>100) {
+            $('#btnScroll').fadeIn();
+          } else {
+            $('#btnScroll').fadeOut();
+          }
+        });
+
+        $("#btnScroll").click(function(){
+          $('body,html').animate({
+            scrollTop:0
+          }, 700);
+          return false;
+        })
+      })
+    </script>
+
+    <!-- modal(food-map) -->
+    <script>
+      //get the modal
+      var modal = document.getElementById('id01');
+
+      //when the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- modal close -->
+    <script>
+      $(function(){
+        $('.fa-times').click(function(){
+          $('.modal').hide();
+        })
+      })
+    </script>
+
+    <!-- swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        // slidesPerView: 3.7,
+        slidesPerView: 3.5,
+        spaceBetween: 40,
+      });
+    </script>
+
+    <!-- nav -->
+    <script>
+      function menuToggle() {
+        var nav = document.getElementById('nav');
+        var toggle = document.getElementById('toggle');
+        nav.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+    </script>
+
+    <!-- tablet swiper -->
+    <script>
+      if (matchMedia("screen and (max-width:1025px)").matches) {
+        var swiper = new Swiper('.swiper-container', {
+          // slidesPerView: 3.7,
+          slidesPerView: 2,
+          spaceBetween: 40,
+        });
+      }
+    </script>
+
+    <script>
+      if (matchMedia("screen and (max-width:760px)").matches) {
+        var swiper = new Swiper('.swiper-container', {
+          // slidesPerView: 3.7,
+          slidesPerView: 2,
+          spaceBetween: 20,
+        });
+      }
+    </script>
+
+    <!-- modal close -->
+    <script>
+      $(function(){
+        $('.fa-times').click(function(){
+          $('.modal').hide();
+        })
+      })
+    </script>
+
+    <script>
+  		/*
+  		1.작은 이미지를 클릭했을때 큰 이미지가 클릭한 해당 이미지로 바뀌도록 합니다
+  		2.>버튼을 눌렀을 때 사진 목록이 왼쪽으로 100px 이동되어 맨앞에 사진은 나가고 세사진이 뒤부분에 들어오게 합니다.
+  		  클릭할 때 마다 사진 목록이 100px 만큼 이동되도록 합니다.
+  		  0부터 1씩 증가하는 데이터가 필요하고 여기에 -100을 곱하면 -100씩 감소
+  		*/
+
+  		window.onload=function() {
+  		//클릭할 대상을 모두 선택해서 변수에 할당 list_zone(800짜리)변수에 작은이미지 전체를 감싸는 대상 할당, list_a에 클릭할떄 이미지경로 값을 받을수 있는 대상할당
+  		var list_zone = document.getElementById("inner_list");
+  		var list_a = list_zone.getElementsByTagName("a"); //자바스크립트는 하위의 개념을 갖고있지 않음
+
+  		var i;
+
+  		//photo_list의 모든 a에 클릭이벤트를 등록하기 위해서 반복문 작성
+  		for(i=0; i<list_a.length; i++) {
+  			list_a[i].onclick=function(e){
+  				e.preventDefault();
+  				var path = document.getElementById("photo").children[0]; //img태그를 찾아줌
+  				path.src=this.href; //속성을 변경 => attr변경하기
+  				console.log(path);
+  				//return false;
+  				}
+  			}
+  		//이전,다음 버튼을 클릭할때마다 ul아 100px만큼 증가 또는 감소되어 좌우측으로 이동
+  			// var b_btn=document.getElementById("next_btn");
+  			// var m_num=0;
+        //
+  			// b_btn.onclick=function(){
+        //
+  			// 	if(m_num>=list_a.length-3) return false;
+  			// 		m_num++;
+  			// 		list_zone.style.marginLeft=-100 * m_num+'px';
+  			// 		return false;
+  			// }
+        //
+  			// var c_btn=document.getElementById("before_btn");
+  			// c_btn.onclick=function() {
+  			// 	if(m_num<=0) return false;
+  			// 	m_num--;
+  			// 	list_zone.style.marginLeft=-100 * m_num+'px';
+  			// 	return false;
+  			// }
+  		}
+  	</script>
+
+  </body>
+</html>

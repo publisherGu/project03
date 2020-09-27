@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> --> <!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/collabo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> <!-- jquery library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/parallax.js"></script> <!-- parrallax library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- fade in library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- fade in css -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap">
+        <h1>
+          <a href="index.html">
+            <img class="logo-gray" src="logo-gray.png">
+            <img class="logo-white" src="logo-white.png">
+            <p>Incheon Airport</p>
+          </a>
+        </h1>
+
+        <div class="fullpageMenu" id="nav">
+          <div class="banner">
+            <img src="img/navigation-img4.jpg" alt="">
+          </div>
+
+          <div class="nav">
+            <ul>
+              <li><a href="#" data-text="Facility">Facility</a></li>
+              <li><a href="#" data-text="Guide Map">Guide Map</a></li>
+              <li><a href="#" data-text="Login">Login</a></li>
+              <li><a href="#" data-text="Sign Up">Sign Up</a></li>
+              <li><a href="#" data-text="Departure Arrival">Departure Arrival</a></li>
+              <li><a href="#" data-text="Parking">Parking</a></li>
+              <li><a href="food.html" data-text="Restaurant">Restaurant</a></li>
+              <li><a href="#" data-text="Service">Service</a></li>
+            </ul>
+          </div>
+          <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+
+        </div>
+
+      </div> <!-- header-wrap end -->
+    </header>
+
+    <div class="content">
+      <div class="parallax-window" data-parallax="scroll" data-image-src="img/disney.jpg">
+        <div class="content-inner">
+          <p data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-mirror="true">INCHEON AIRPORT</p>
+          <h1 data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="300">FACILITIES</h1>
+          <ul>
+
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="500" onclick="pageMove('1')">
+              <a href="#" >
+                <i class="fas fa-bullhorn"></i>
+                <p>NOTICE</p>
+              </a>
+            </li>
+
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="700" onclick="pageMove('2')">
+              <a href="#" >
+                <i class="fas fa-dungeon"></i>
+                <p>ATTRACTION</p>
+              </a>
+            </li>
+
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="900">
+              <a>
+                <i class="fas fa-play" style="cursor:pointer" onclick="document.getElementById('id01').style.display='block'"></i>
+                <p>PLAY</p>
+              </a>
+            </li>
+
+            <div id="id01" class="modal">
+              <form class="modal-content animate">
+                <div class="imgcontainer">
+                  <i class="fas fa-times"></i>
+                  <iframe src="https://www.youtube.com/embed/MJMmaUbYPYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </form>
+            </div>
+
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="1100" onclick="pageMove('3')">
+              <a href="#">
+                <i class="far fa-handshake"></i>
+                <p>COLLABO</p>
+              </a>
+            </li>
+
+            <li data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down" data-aos-delay="1300" onclick="pageMove('4')">
+              <a href="#">
+                <i class="fas fa-gift"></i>
+                <p>PROMOTION</p>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="section s1">
+        <h1 data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down">NOTICE</h1>
+        <div class="s1-wrap">
+          <img src="img/disney-banner.jpg" alt="">
+          <p>
+            안녕하십니까? 디즈니 어드벤처입니다.<br>
+            디즈니 어드벤처는 코로나바이러스감염증19(COVID-19)로부터 안전한 테마파크를 만들기 위해 바이러스 확산 방지를 위한 최선의 노력을 다하고 있습니다.<br>
+            디즈니 어드벤처는 코로나19 감염 예방 대책 수립시 아래의 사항을 최우선의 가치로 두고 있습니다.<br>
+            <br>
+          ㆍ손님과 캐스트를 포함한 파크와 관련된 모든 사람의 건강 및 안전<br>
+          ㆍ질병관리본부의 거리두기 지침에 부합하는 운영방침 수립 및 이행<br>
+            <br>
+            손님여러분께서 안심하고 즐기실 수 있도록 롯데월드 어드벤처는 앞으로도 방역 및 예방활동에 최선을 다하겠습니다. 추후에도 코로나19 바이러스 발생 동향에 따라 정부의 지침을 준수하며, 건강과 안전을 위한 대책을 철저히 수립/이행하겠습니다.
+            <br>
+            아래 링크를 통해 롯데월드의 코로나19 예방대책 및 안전한 파크 방문을 위한 이용수칙을 확인하실 수 있습니다.<br>
+            <br>
+            ▶ 디즈니 어드벤처 코로나19 방역 및 예방 활동 현황<br>
+            ▶ 티켓 예매 및 입장 안내<br>
+            ▶ 어트랙션 이용 안내<br>
+            ▶ 공연 및 참여프로그램 이용 안내<br>
+            <!-- ▶ 레스토랑, 기프트샵 이용 안내<br>
+            ▶ 손님 예방수칙 안내 -->
+          </p>
+        </div>
+      </div>
+
+      <div class="section s2">
+        <h1 data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down">ATTRACTION</h1>
+        <div class="s2-wrap">
+
+          <div class="s2-img-wrap">
+            <ul>
+              <li>
+                <a>
+                  <img src="img/disney-attr1.jpg">
+                  <div class="opacity-window">
+                    <h2>35 Years Anniversary Park</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="img/disney-attr2.jpg">
+                  <div class="opacity-window">
+                    <h2>Mickey Mouse Ferris Wheel</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a>
+                  <img src="img/disney-attr3.jpg">
+                  <div class="opacity-window">
+                    <h2>Sleeping Beauty Of Castle</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="img/disney-attr4.jpg">
+                  <div class="opacity-window">
+                    <h2>FireWorks Midnight Summer</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="img/disney-attr5.jpg">
+                  <div class="opacity-window">
+                    <h2>DayTime Parade Dreaming Up</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a>
+                  <img src="img/disney-attr6.jpg">
+                  <div class="opacity-window">
+                    <h2>Character Goods Shop</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="img/disney-attr7.jpg">
+                  <div class="opacity-window">
+                    <h2>Disney Short Animation Theater</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="img/disney-attr8.jpg">
+                  <div class="opacity-window">
+                    <h2>Mickey Mouse Ferris Wheel</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+
+              <li>
+                <a>
+                  <img src="img/disney-attr9.jpg">
+                  <div class="opacity-window">
+                    <h2>Disney's Art of Animation Resort</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <span class="read">READ MORE</span>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section s3">
+        <h1 data-aos-easing="ease-in" data-aos-duration="1000" data-aos="fade-down">COLLABORATION</h1>
+        <div class="gradient-border all">
+          <div class="s3-textbox">
+            <p>DISNEY</p>
+            <p style="font-size:35px">X</p>
+            <p>INCEON</p>
+          </div>
+          <ul>
+            <li>
+              <a>
+                <img src="img/disney-collabo2.jpg" alt="">
+                <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </a>
+            </li>
+
+            <li>
+              <a>
+                <img src="img/disney-collabo3.jpg" alt="">
+                <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section s4">
+        <!-- <h1 style="font-size:50px">PROMOTION</h1> -->
+        <div class="img-wrap">
+
+          <ul class="img-wrap-1">
+            <li><img src="img/disney-goods3.jpg" alt=""></li>
+          </ul>
+
+          <ul class="img-wrap-2">
+            <li><img src="img/disney-goods5-2.jpg"></li>
+            <li><img src="img/disney-goods5.jpg" alt=""></li>
+          </ul>
+
+          <ul class="img-wrap-3">
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+                <p>@ Disney</p>
+                <p>Incheon Airport</p>
+                <br>
+                <p>Share your Incheon moments</p>
+                <p>with us on FaceBook</p>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="img-wrap-4">
+            <li><img src="img/disney-goods4.jpg"></li>
+            <li><img src="img/disney-goods.jpg" alt=""></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-wrap">
+
+        <div class="footer-left">
+          <h2>ADDRESS</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <br>
+          <i class="fas fa-phone-alt">  010-2062-1872</i><br>
+          <i class="fas fa-envelope">  guwonmo2@gmail.com</i><br>
+          <ul>
+
+            <li>
+              <a>
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li>
+              <a>
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+
+            <li>
+              <a>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a>
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="footer-center">
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li><a href="#" style="font-weight:bold">About COVID-19</a></li>
+            <li><a href="#">StartㆍArrive</a></li>
+            <li><a href="#">TrafficㆍParking</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Restaurant</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Servie</a></li>
+            <li><a href="#">Tax Free</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Airport Guide Map</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+
+        </div>
+
+        <div class="footer-right">
+          <h2>CONTACT US</h2>
+          <form>
+            <input type="text" class="contact-email" placeholder="Your Email Addrress">
+            <input type="text" class="contact-form" placeholder="Message...">
+          </form>
+
+          <div class="btn-container">
+            <button class="send-btn" type="button" name="button">
+              <i class="fas fa-paper-plane">  Send</i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+    <button id="btnScroll">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <!-- header sticky -->
+    <script>
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 150) {
+          $('header').addClass("sticky");
+        } else {
+          $('header').removeClass("sticky");
+        }
+      })
+    </script>
+
+    <!-- scroll -->
+    <script>
+      $("#btnScroll").hide();
+      $(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop()>100) {
+            $('#btnScroll').fadeIn();
+          } else {
+            $('#btnScroll').fadeOut();
+          }
+        });
+
+        $("#btnScroll").click(function(){
+          $('body,html').animate({
+            scrollTop:0
+          }, 700);
+          return false;
+        })
+      })
+    </script>
+
+    <!-- parallax js -->
+    <script>
+      $('.parallax-window').parallax({imageSrc: 'img/disney.jpg'});
+    </script>
+
+    <!-- AOS js -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- modal(food-map) -->
+    <script>
+      //get the modal
+      var modal = document.getElementById('id01');
+
+      //when the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- modal close -->
+    <script>
+      $(function(){
+        $('.fa-times').click(function(){
+          $('.modal').hide();
+        })
+      })
+    </script>
+
+    <!-- bookmark -->
+    <script>
+      function pageMove(seq){
+          var offSet = $(".s" + seq).offset();
+          $('html, body').animate({scrollTop : offSet.top}, 1000);
+      }
+    </script>
+
+    <!-- <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script> -->
+
+    <!-- mobile nav -->
+    <script>
+      $(function(){
+        $('.fa-align-justify').click(function(){
+          $('header>nav>ul').toggle("fast");
+        })
+      })
+    </script>
+
+    <!-- mobile nav -->
+    <!-- <script>
+      function openNav() {
+      document.getElementById("mySidenav").style.height = "100%";
+      }
+
+      function closeNav() {
+      document.getElementById("mySidenav").style.height = "0%";
+      }
+    </script> -->
+
+    <script>
+      function menuToggle() {
+        var nav = document.getElementById('nav');
+        var toggle = document.getElementById('toggle');
+        nav.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+    </script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+     slidesPerView: 3.3,
+     spaceBetween: 30,
+     pagination: {
+       el: '.swiper-pagination',
+       clickable: true,
+     },
+   });
+    </script>
+
+  </body>
+</html>
